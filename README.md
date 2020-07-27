@@ -18,11 +18,11 @@ There is a form on this page. Ask for required input like account number, custom
 
 ## 4. /withdraw
 
-There is a form on this page. Ask for required input like account number, customer name and Id, of person who is withdrawing the money. User is allowed to withdraw in MXN, USD or CAD. It returns an error message if there is no account in the database with the same account number. It also returns an error if customer name or Id don't match to the customer name and Id attached to account.
+There is a form on this page. Ask for required input like account number, customer name and Id, of person who is withdrawing the money. User is allowed to withdraw in MXN, USD or CAD. It returns an error message if there is no account in the database with the same account number. It also returns an error if customer name or Id don't match to the customer name and Id attached to the withdrawing account.
 
 ## 5. /transfer
 
-There is a form on this page. Ask for required input like To account, From  account, customer name and Id, of the user who is trying a transfer. User Id and customer name should be matched to the From account 's customer name and Id otherwise it returns an error. User is allowed to transfer in MXN, USD or CAD. 
+There is a form on this page. Ask for required input like To account, From  account, customer name and Id, of the user who is trying a transfer. Id and customer name should be matched to the From account 's customer name and Id otherwise it returns an error. User is allowed to transfer in MXN, USD or CAD. 
 
 ## 6. /account
 
