@@ -2,6 +2,8 @@
 
 ### It is React + Redux + Firebase web app. Redux manages state of the app.
 
+### It is solution to option B.
+
 This app consists of 7 different routes which are defined below.
 
 ## 1. "/" home page
