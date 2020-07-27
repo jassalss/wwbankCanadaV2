@@ -5,11 +5,10 @@ class NavBar extends Component {
   render() {
     return (
       <div className="ui secondary pointing menu">
-        <NavLink
-          to="/create-account"
-          className="item"
-          onClick={this.classChange}
-        >
+        <NavLink exact to="/" className="item">
+          Home
+        </NavLink>
+        <NavLink to="/create-account" className="item">
           Create Account
         </NavLink>
         <NavLink to="/deposit" className="item">
