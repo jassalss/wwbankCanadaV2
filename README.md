@@ -1,68 +1,35 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# wwbankCanada
 
-## Available Scripts
+### It is React + Redux + Firebase web app. Redux manages state of the app.
 
-In the project directory, you can run:
+This app consists of 7 different routes which are defined below.
 
-### `npm start`
+## 1. "/" home page
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+This page is an intro to the web app.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## 2. /create-account
 
-### `npm test`
+On this page, the user can create a bank account. Customer name, customer Id, account number, and initial balance are four inputs on this page. Initial balance can be empty. But other inputs are required. When user submit a form on this page, It creates a new account. If there is an account already exist in the database with the same account number, then it returns an error. This page made for admin user
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 3. /deposit
 
-### `npm run build`
+There is a form on this page. Ask for required input like account number, customer name and Id of person who is depositing the money. User is allowed to deposit in MXN, USD or CAD. It returns an error message if there is no account in the database with the same account number.
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 4. /withdraw
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+There is a form on this page. Ask for required input like account number, customer name and Id, of person who is withdrawing the money. User is allowed to withdraw in MXN, USD or CAD. It returns an error message if there is no account in the database with the same account number. It also returns an error if customer name or Id don't match to the customer name and Id attached to the withdrawing account.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 5. /transfer
 
-### `npm run eject`
+There is a form on this page. Ask for required input like To account, From  account, customer name and Id, of the user who is trying a transfer. Id and customer name should be matched to the From account 's customer name and Id otherwise it returns an error. User is allowed to transfer in MXN, USD or CAD. 
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## 6. /account
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+This page asks for the account number and displays the balance and other info related to the account. It is made for the admin user.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## 7. /allAccunts
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+This page display all the accounts in database. It is made for the admin user.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+#### Thanks
