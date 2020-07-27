@@ -1,0 +1,117 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing create account page with Snapshot matches the snapshot 1`] = `
+<div>
+  <h3
+    className="ui center aligned header"
+  >
+    Create Customer
+  </h3>
+  <h4
+    className="ui center aligned header"
+  >
+    Admin Only
+  </h4>
+  <div
+    className="ui centered grid"
+  >
+    <div
+      className="ten wide column"
+    >
+      <form
+        className="ui form"
+        onSubmit={[Function]}
+      >
+        <div
+          className="field"
+        >
+          <label>
+            Customer Name
+          </label>
+          <input
+            name="customerName"
+            placeholder="Customer Name"
+            required={true}
+            type="text"
+          />
+        </div>
+        <div
+          className="field"
+        >
+          <label>
+            Customer ID
+          </label>
+          <input
+            name="customerId"
+            placeholder="Customer ID (Input is Number not letter)"
+            required={true}
+            type="number"
+          />
+        </div>
+        <div
+          className="field"
+        >
+          <label>
+            Account Number
+          </label>
+          <input
+            name="accountNumber"
+            placeholder="Account Number (Input is Number not letter)"
+            required={true}
+            type="number"
+          />
+        </div>
+        <div
+          className="field"
+        >
+          <select
+            class="ui dropdown"
+            name="currency"
+            required={true}
+          >
+            <option
+              value=""
+            >
+              Select Currency
+            </option>
+            <option
+              value="CAD"
+            >
+              CAD
+            </option>
+            <option
+              value="USD"
+            >
+              USD
+            </option>
+            <option
+              value="MXN"
+            >
+              MXN
+            </option>
+          </select>
+        </div>
+        <div
+          className="field"
+        >
+          <label>
+            Initial Balance
+          </label>
+          <input
+            name="balance"
+            placeholder="Initial Balance (Input is Number not letter)"
+            step="0.001"
+            type="number"
+          />
+        </div>
+        <button
+          className="ui button"
+          type="submit"
+        >
+          Submit
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+`;

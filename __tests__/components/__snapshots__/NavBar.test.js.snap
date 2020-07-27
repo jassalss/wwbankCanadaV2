@@ -1,0 +1,65 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing Nav Bar with Snapshot matches the snapshot 1`] = `
+<div
+  className="ui secondary pointing menu"
+>
+  <a
+    aria-current="page"
+    className="item active"
+    href="/"
+    onClick={[Function]}
+    style={Object {}}
+  >
+    Home
+  </a>
+  <a
+    aria-current={null}
+    className="item"
+    href="/create-account"
+    onClick={[Function]}
+  >
+    Create Account
+  </a>
+  <a
+    aria-current={null}
+    className="item"
+    href="/deposit"
+    onClick={[Function]}
+  >
+    Deposit
+  </a>
+  <a
+    aria-current={null}
+    className="item"
+    href="/withdraw"
+    onClick={[Function]}
+  >
+    Withdraw
+  </a>
+  <a
+    aria-current={null}
+    className="item"
+    href="/transfer"
+    onClick={[Function]}
+  >
+    Transfer
+  </a>
+  <a
+    aria-current={null}
+    className="item"
+    href="/account"
+    onClick={[Function]}
+  >
+    Check Balance
+  </a>
+  <a
+    aria-current={null}
+    className="item"
+    href="/allAccunts"
+    onClick={[Function]}
+  >
+    Display All Accounts
+  </a>
+</div>
+`;

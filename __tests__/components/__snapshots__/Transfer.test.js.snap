@@ -1,0 +1,125 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing Transfer page with Snapshot matches the snapshot 1`] = `
+<div>
+  <h3
+    className="ui center aligned header"
+  >
+    Transfer Money
+  </h3>
+  <div
+    className="ui centered grid"
+  >
+    <div
+      className="ten wide column"
+    >
+      <form
+        className="ui form"
+        onSubmit={[Function]}
+      >
+        <div
+          className="field"
+        >
+          <select
+            className="ui dropdown"
+            name="currency"
+            required={true}
+          >
+            <option
+              value=""
+            >
+              Select Currency
+            </option>
+            <option
+              value="CAD"
+            >
+              CAD
+            </option>
+            <option
+              value="USD"
+            >
+              USD
+            </option>
+            <option
+              value="MXN"
+            >
+              MXN
+            </option>
+          </select>
+        </div>
+        <div
+          className="field"
+        >
+          <label>
+            Trasfer Amount
+          </label>
+          <input
+            name="amount"
+            placeholder="Amount for transfer"
+            step="0.001"
+            type="number"
+          />
+        </div>
+        <div
+          className="field"
+        >
+          <label>
+            From Account
+          </label>
+          <input
+            name="fromaccountNumber"
+            placeholder="From Account"
+            required={true}
+            type="number"
+          />
+        </div>
+        <div
+          className="field"
+        >
+          <label>
+            To Account
+          </label>
+          <input
+            name="toaccountNumber"
+            placeholder="To Account"
+            required={true}
+            type="number"
+          />
+        </div>
+        <div
+          className="field"
+        >
+          <label>
+            Customer Name
+          </label>
+          <input
+            name="customerName"
+            placeholder="Customer Name"
+            required={true}
+            type="text"
+          />
+        </div>
+        <div
+          className="field"
+        >
+          <label>
+            Customer ID
+          </label>
+          <input
+            name="customerId"
+            placeholder="Customer ID (Input is Number not letter)"
+            required={true}
+            type="number"
+          />
+        </div>
+        <button
+          className="ui button"
+          type="submit"
+        >
+          Submit
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+`;
