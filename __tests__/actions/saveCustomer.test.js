@@ -21,7 +21,7 @@ describe("Testing savingNewCustomer with existing account", () => {
     const expectedActions = [
       {
         type: types.SAVE_CUSTOMER,
-        payload: "Account Already exist. Please use another Account Number",
+        payload: "Account Already exists. Please use another Account Number",
       },
     ];
 

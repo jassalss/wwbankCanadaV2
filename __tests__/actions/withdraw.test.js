@@ -26,7 +26,7 @@ describe("Testing withDrawTheMoney action", () => {
     const expectedActions = [
       {
         type: types.WITHDRAW_INFO,
-        payload: `${newCustObj.CustomerName} withdraw $${newCustObj.Amount} CAD  from acount with account# ${newCustObj.AccountNumber}.`,
+        payload: `${newCustObj.CustomerName} withdraw $${newCustObj.Amount} CAD  from account with account# ${newCustObj.AccountNumber}.`,
       },
     ];
 

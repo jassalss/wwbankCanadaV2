@@ -12,13 +12,13 @@ export const saveNewCustomer = (customerObj, otherCurrency) => async (
 ) => {
   const eventref = realTimeDB.ref(`allAccounts/${customerObj.AccountNumber}`);
   const snapshot = await eventref.once("value");
-  var message = "Account Already exist. Please use another Account Number";
+  var message = "Account Already exists. Please use another Account Number";
   try {
     if (!snapshot.exists()) {
       await realTimeDB
         .ref(`allAccounts/${customerObj.AccountNumber}`)
         .set(customerObj);
-      message = `New Account Created Sucessfully With balance $${customerObj.Balance} CAD ${otherCurrency}`;
+      message = `New Account Created Successfully With balance $${customerObj.Balance} CAD ${otherCurrency}`;
     } else {
     }
   } catch (error) {
@@ -78,7 +78,7 @@ export const withDrawTheMoney = (customerObj, otherCurrency) => async (
           } else {
             account.depositHistory = `${customerObj.CustomerName} withdraw $${customerObj.Amount} CAD ${otherCurrency} from this account at ${dateTime}`;
           }
-          payload = `${customerObj.CustomerName} withdraw $${customerObj.Amount} CAD ${otherCurrency} from acount with account# ${customerObj.AccountNumber}.`;
+          payload = `${customerObj.CustomerName} withdraw $${customerObj.Amount} CAD ${otherCurrency} from account with account# ${customerObj.AccountNumber}.`;
         } else {
           payload = "Requested withdraw amount is greater than balance";
         }
@@ -133,7 +133,7 @@ export const transferTheMoney = (
               currentBal2 += requestBal;
               ToAccount.Balance = currentBal2;
               eventref.set(ToAccount);
-              payload = `From account# ${fromAccountnum} $${amount} CAD ${otherCurrency} sccuessfully transfer to acount# ${toAccountNum}`;
+              payload = `From account# ${fromAccountnum} $${amount} CAD ${otherCurrency} successfully transfer to account# ${toAccountNum}`;
             } else {
               payload = "Requested Transfer amount is greater than balance";
             }
