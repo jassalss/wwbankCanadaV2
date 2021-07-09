@@ -2,7 +2,9 @@
 
 ### It is React + Redux + Firebase web app. Redux manages state of the app.
 
-### It is solution to option B.
+### App is deployed at following address
+
+#### https://wwbankcanada.web.app/
 
 This app consists of 7 different routes which are defined below.
 
